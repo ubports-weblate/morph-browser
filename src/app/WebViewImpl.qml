@@ -47,8 +47,8 @@ WebView {
     readonly property alias findController: findController
 
     Component.onCompleted: {
-        console.log(__ua.defaultUA);
-        profile.httpUserAgent = __ua.defaultUA;
+        console.log(context.__ua.defaultUA);
+        profile.httpUserAgent = context.__ua.defaultUA;
     }
 
     //property real contextMenux: contextMenuRequest.x + (webview.scrollPosition.x - contextMenuStartScroll.x)
